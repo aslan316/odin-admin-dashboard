@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div id="top">
-        <img src="images/magnify.svg" alt="magnifying glass icon" id="search-icon" class="icon black">
-        <input type="search" name="search-bar" id="search-bar">
-        <img src="images/bell.svg" alt="bell icon" id="bell-icon" class="icon black">
-        <img src="" alt="profile picture">
-        <div id="account-name">Althea Vestrit</div>
+        <div class="search center">
+            <img src="images/magnify.svg" alt="magnifying glass icon" id="search-icon" class="icon black">
+            <input type="search" name="search-bar" id="search-bar">
+        </div>
+
+        <div class="account center">
+            <img src="images/bell-ring-outline.svg" alt="bell icon" id="bell-icon" class="icon black">
+            <img src="./images/althiavestrit.webp" alt="profile picture" class="pfp">
+            <div id="account-name">Althea Vestrit</div>
+        </div>
     </div>
 
-   <div id="intro">
+    <div id="intro" class="shadow">
         <div id="greeting">
-            <img src="" alt="profile picture" id="profile-greeting">
+            <img src="./images/althiavestrit.webp" alt="profile picture" id="profile-greeting" class="pfp">
             <div class="hello">Hi there,</div>
             <div id="intro-name">Althea Vestrit (@vivacia)</div>
         </div>
+
         <div id="buttons">
-           <button type="button">New</button> 
-           <button type="button">Upload</button> 
-           <button type="button">Save</button> 
+            <button type="button">New</button>
+            <button type="button">Upload</button>
+            <button type="button">Save</button>
         </div>
-   </div> 
+    </div>
 
-   <div id="sidebar">
-       <header class="center">
-        <img src="images/view-dashboard.svg" alt="dashboard icon" id="dashboard-icon" class="icon white">
-        <div id="dashboard-title">Dashboard</div>
-       </header>
+    <div id="sidebar">
+        <header class="center">
+            <img src="images/view-dashboard.svg" alt="dashboard icon" id="dashboard-icon" class="icon white">
+            <div id="dashboard-title">Dashboard</div>
+        </header>
 
-       <div class="normal-actions">
+        <div class="normal-actions">
             <div class="home center">
                 <img src="images/home.svg" alt="home icon" id="home-icon" class="icon white">
                 Home
             </div>
             <div class="profile center">
-                <img src="images/card-account-details-outline.svg" alt="profile icon" id="profile-icon" class="icon white">
+                <img src="images/card-account-details-outline.svg" alt="profile icon" id="profile-icon"
+                    class="icon white">
                 Profile
             </div>
             <div class="messages center">
@@ -59,9 +68,9 @@
                 <img src="images/account-group.svg" alt="communities icon" id="communities-icon" class="icon white">
                 Communities
             </div>
-       </div>
+        </div>
 
-       <div class="about">
+        <div class="about">
             <div class="settings center">
                 <img src="images/cog.svg" alt="settings icon" id="settings-icon" class="icon white">
                 Settings
@@ -74,19 +83,20 @@
                 <img src="images/shield-check.svg" alt="privacy icon" id="privacy-icon" class="icon white">
                 Privacy
             </div>
-       </div>
-   </div>
-   
-   <div id="projects-area">
+        </div>
+    </div>
 
-   </div>
+    <div id="projects-area">
+        Your Projects
+    </div>
 
-   <div id="announcements-area">
-    
-   </div>
+    <div id="announcements-area">
+        Announcments
+    </div>
 
-   <div id="trending-area">
-
-   </div>
+    <div id="trending-area">
+        Trending
+    </div>
 </body>
+
 </html>
