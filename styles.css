@@ -3,11 +3,11 @@
     overscroll-behavior: none;
     margin: 0;
     padding: 0;
-    font-family: robotoregular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: robotomedium, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .pfp {
-    width: 50px;
+    width: 30px;
     height: auto;
     border-radius: 100%;
 }
@@ -30,7 +30,7 @@ body {
     height: 100vh;
     background-color: #d7e0e5;
     display: grid;
-    grid-template-columns: 18% 62% 20%;
+    grid-template: 7% 12% 37% auto / 18% 62% 20%;
 }
 
 .shadow {
@@ -61,7 +61,7 @@ body {
     background-color: white;
 
     display: grid;
-    grid-template: auto / 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
     justify-items: space-between;
     margin-bottom: 20px;
 }
@@ -76,7 +76,7 @@ body {
 
 #profile-greeting {
     grid-area: 1 / 1 / 3 / 2;
-    width: 80px;
+    width: 50px;
     height: auto;
 
     margin: 5px 20px;
@@ -158,7 +158,7 @@ body {
 
 #card-area {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(2, 50%);
     gap: 10px;
 }
 
@@ -183,6 +183,7 @@ body {
 .card-body {
     grid-area: 2 / 2 / 2 / 3;
     color: grey;
+    font-size: .8rem;
 }
 
 .card-icons {
@@ -193,8 +194,36 @@ body {
 
 #announcements-area {
     grid-area: 3 / 3 / 4 / 4;
+    display: flex;
+    padding: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#announcements {
+    background-color: #eeeeee;
+    border-radius: 5%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news {
+    padding: 5%;
+    font-size: .6rem;
 }
 
 #trending-area {
     grid-area: 4 / 3 / 5 / 4;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    padding-top: 8%;
+}
+
+.accounts {
+    background-color: #eeeeee;
+    border-radius: 5%;
+    padding: 5%;
 }
